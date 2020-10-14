@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% load static %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Contact</title>
+  <link href='{% static "ass/css/styles.css" %}' rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="header">
+  <div class="header-left-panel">
+    <div class="logo-wrap">
+      <div class="logo">
+        <h2>Automated Security Systems</h2>
+        <h1>A.S.S.</h1>
+      </div>
+    </div>
+  </div>
+    <div class="menu">
+      <ul>
+        <li class="marRight20"><a href="/">home</a></li>
+        <li class="marRight20"><a href="/about">about</a></li>
+        <li><a href="/services">services</a></li>
+        <li class="marRight20"><a href="/features">features</a></li>
+        <li class="marRight20"><a href="#">blog</a></li>
+        <li><a href="/contact" class="active">contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--- panel wrap div end -->
+<div class="panel-wrap">
+  <div class="page-wrapper">
+    <div class="primary-content marRight30">
+      <div class="mid-panel">
+        <div class="mid-panel-content">
+          <div class="title">
+            <h1>contact</h1>
+          </div>
+          <div class="border"></div>
+          <form>
+            <div class="contact-form margin-top">
+              <label> <span>Full name</span>
+              <input type="text" class="input_text" name="name" id="name"/>
+              </label>
+              <label> <span>Email</span>
+              <input type="text" class="input_text" name="email" id="email"/>
+              </label>
+              <label> <span>Subject</span>
+              <input type="text" class="input_text" name="subject" id="subject"/>
+              </label>
+              <label> <span>Message</span>
+              <textarea class="message" name="feedback" id="feedback"></textarea>
+              <input type="button" class="button" value="Submit Form" />
+              </label>
+            </div>
+          </form>
+          <div class="clearing"></div>
+          <div class="address">
+            <div class="panel">
+              <div class="title">
+                <h1>Address - 01</h1>
+              </div>
+              <div class="content">
+                <p>Block No:5, Some where Road,<br />
+                  City name, State, Country name</p>
+                <p><span>Phone :</span> 000 888 88888</p>
+                <p><span>Email :</span> <a href="mailto:info@companyname.com">info@companyname.com</a></p>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="title">
+                <h1>Address - 02</h1>
+              </div>
+              <div class="content">
+                <p>Block No:5, Some where Road,<br />
+                  City name, State, Country name</p>
+                <p><span>Phone :</span> 000 888 88888</p>
+                <p><span>Email :</span> <a href="mailto:info@companyname.com">info@companyname.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>

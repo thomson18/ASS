@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='{% static "ass/css/style.css" %}' type='text/css' />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+     <link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">A.S.S.</label>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a class="active" href="/services">Services</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/logout">LogOut</a></li>
+      </ul>
+    </nav>
+    <section>
+      <div class="middle">
+        <h2> Upload an Image </h2>
+          <form action = "/detector/" method= "post" enctype = "multipart/form-data">
+            {%csrf_token%}
+            <input type ="file" name ="document">
+            <button type = "submit"> Upload File </button>
+          </form>
+      </div>
+    </section>
+  </body>
+</html>
